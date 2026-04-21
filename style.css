@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: black;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 0;
+  padding-right: 20px;
+}
+
+header {
+  background: black;
+  padding: 15px 20px;
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+nav a {
+  font-size: 1rem;
+  margin-right: 15px;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  padding-bottom: 4px;
+  transition: color 0.3ms;
+}
+
+nav a:hover {
+  color: white;
+}
+
+#about-me {
+  background-color: black;
+  padding: 6rem 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 70vb;
+  font-size: 2rem;
+}
+
+.hero-kiri {
+  max-width: 550px;
+}
+
+.hero-kiri h2 {
+  font-size: 3.5 rem;
+  font-weight: 800;
+  color: aliceblue;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.hero-kiri p {
+  font-size: 1rem;
+  font-weight: 550;
+  color: white;
+}
+
+.hero-kiri button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero-kanan img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid aliceblue;
+}
+
+#project {
+  background-color: black;
+  padding: 6rem 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 70vb;
+  font-size: 2rem;
+}
+
+.project-hero-top {
+  color: white;
+}
+
+.project-hero-mid {
+  color: white;
+}
+
+section {
+  background: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+img {
+  border-radius: 8px;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 60px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
