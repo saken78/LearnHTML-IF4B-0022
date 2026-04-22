@@ -4,42 +4,49 @@
   padding: 0;
 }
 
-body {
-  font-family: system-ui, sans-serif;
-  background-color: black;
-  color: #333;
-  line-height: 1.6;
-  padding-top: 0;
-  padding-right: 20px;
-}
-
-header {
+.header-container {
   background: black;
   padding: 15px 20px;
   display: flex;
+  flex-direction: row;
   position: sticky;
+  top: 0px;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
-header h1 {
+.header-h1 {
+  margin-left: 15px;
   font-size: 1.5rem;
   font-weight: bold;
   color: white;
 }
 
-nav a {
-  font-size: 1rem;
-  margin-right: 15px;
-  position: relative;
-  color: white;
-  text-decoration: none;
-  padding-bottom: 4px;
-  transition: color 0.3ms;
+.header-flex-content {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
 }
 
-nav a:hover {
+.child-a-header {
+  margin: 10px;
+  font-size: 1rem;
   color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.child-a-header:hover {
+  color: #333;
+}
+
+#body {
+  font-family: system-ui, sans-serif;
+  background-color: black;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 0;
 }
 
 #about-me {
@@ -49,43 +56,46 @@ nav a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  min-height: 70vb;
+  min-height: 70vh;
   font-size: 2rem;
 }
 
-.hero-kiri {
+.about-me-right-hero-section {
   max-width: 550px;
 }
 
-.hero-kiri h2 {
+.about-me-right-hero-section img {
+  max-width: 200px;
+  max-height: 200px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid aliceblue;
+}
+
+.about-me-left-hero-section h2 {
   font-size: 3.5 rem;
   font-weight: 800;
   color: aliceblue;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
   line-height: 1.1;
 }
 
-.hero-kiri p {
+.about-me-left-hero-section p {
   font-size: 1rem;
-  font-weight: 550;
+  font-weight: 500;
   color: white;
 }
 
-.hero-kiri button {
+.about-me-left-hero-section button {
   background: #007bff;
+  font-size: medium;
   color: #fff;
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.hero-kanan img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid aliceblue;
 }
 
 #project {
@@ -107,7 +117,7 @@ nav a:hover {
   color: white;
 }
 
-section {
+/* section {
   background: #fff;
   margin: 20px 0;
   padding: 20px;
@@ -151,3 +161,4 @@ footer {
   padding: 20px;
   color: #666;
 }
+ */
